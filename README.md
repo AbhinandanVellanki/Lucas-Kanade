@@ -1,34 +1,35 @@
-# HW2: Lucas-Kanade Tracking
+# Optical Flow and Motion Detection
 
-## Overview
-This homework consists of 3 major sections.
+## Tracking
 
-In the first section, you will implement a simple Lucas-Kanade (LK) tracker with one single template.
+### Tracking A Car (Without Template Correction)
 
-The second section requires you to implement a motion subtraction method for tracking moving pixels in a scene.
+![Track Car](results/images/tracking%20results/Car%20Sequence.png)
 
-In the final section, you shall study efficient tracking such as inverse composition.
+### Tracking A Car (With Template Correction)
 
-## Downloading the assignment
+![Track Car Template](results/images/tracking%20results/Car%20Sequence%20With%20Template%20Correction.png)
 
-Using `git pull` from the terminal while inside the git folder should help download all of the files.
+### Tracking A Human (Without Template Correction)
 
-Please download the `data` folder from this [Drive link](https://drive.google.com/drive/folders/1fBkNSKY_X1JF2fc_dCX4ILsCkBGRq2ya?usp=drive_link). Please let us know early if you are facing issues in downloading. The internal folder structure should look something like this
+![Track Car](results/images/tracking%20results/Girl%20Sequence.png)
 
-```
-hw2
->code
->>...
->data
->>...
->16_820_F23_HW2_Lucas_Kanade_Tracking.pdf
->README.md
-```
+### Tracking A Human (With Template Correction)
 
-#### FAQs
+![Track Car Template](results/images/tracking%20results/Girl%20Sequence%20With%20Template%20Correction.png)
 
-**Visualization**: You are free to visualize the bounding boxes and frames any way you see fit. To help with questions 1.3 and 1.4
-we have provided a helper script `plotRects.py` which you can use.
+## Motion Detection
 
-Example usage: `python plotRects.py q1.3 car`
+### Detect Motion: Example 1
 
+![Car 1](results/images/identify%20moving%20objects/aerial%20cars/aerial_30.png)
+![Car 2](results/images/identify%20moving%20objects/aerial%20cars/aerial_60.png)
+![Car 3](results/images/identify%20moving%20objects/aerial%20cars/aerial_90.png)
+![Car 4](results/images/identify%20moving%20objects/aerial%20cars/aerial_120.png)
+
+### Detect Motion: Example 2
+
+![Car 1](results/images/identify%20moving%20objects/ants/ant_30.png)
+![Car 2](results/images/identify%20moving%20objects/ants/ant_60.png)
+![Car 3](results/images/identify%20moving%20objects/ants/ant_90.png)
+![Car 4](results/images/identify%20moving%20objects/ants/ant_120.png)
